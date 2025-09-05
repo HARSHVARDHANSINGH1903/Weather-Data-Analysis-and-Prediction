@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Data Analysis & Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>🌤️ Weather Data Analysis and Prediction</h1>
+    <p class="subtitle">Analyze historical weather data and predict the next 7 days of average temperatures.</p>
+
+    <div class="date-input-group">
+      <label for="start-date">Select Start Date for Forecast:</label>
+      <input type="date" id="start-date" required />
+    </div>
+
+    <button id="analyze-btn">Analyze & Predict</button>
+
+    <canvas id="chart" width="800" height="250"></canvas>
+  </div>
+
+  <footer>
+    <p>© 2025 Weather For Everyone | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
